@@ -1,0 +1,87 @@
+\section{Skalarprodukt und Orthogonalität}
+
+\subsection{Skalarprodukt}
+\begin{frame}
+    \frametitle{Skalarprodukt}
+    Das Skalarprodukt ordnet zwei Vektoren ein Skalar zu.
+    \begin{itemize}
+	    \item Multiplikation zweier Vektoren $\rightarrow$ Skalar (Reele Zahl)
+	    \item Kann nur gebildet werden, wenn die Vektoren die gleiche Dimension haben
+	    \item Wenn das Skalar = 0 ist, sind die Vektoren orthogonal (Rechter Winkel)
+    \end{itemize}
+	Beispiel: $\vec{a} = (1,2,3)$ und $\vec{b} = (4,5,6)$
+	\begin{align*}
+		\vec{a} \bullet \vec{b} &= (1,2,3) \bullet (4,5,6) \\
+		&= 1 \cdot 4 + 2 \cdot 5 + 3 \cdot 6 \\
+		&= 32
+	\end{align*}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Skalarprodukt Übungen}
+	\begin{enumerate}
+		\item $\vec{a} \bullet \vec{b} = (0, -3\pi) \bullet (\sqrt{2}, 0)$ 
+		\item $\vec{a} \bullet \vec{b} = (-21, 5) \bullet (\sqrt{5}, -3, 1)$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Skalarprodukt Lösungen}
+	\begin{enumerate}
+		\item $\vec{a} \bullet \vec{b} = (0, -3\pi) \bullet (\sqrt{2}, 0) = 0$ 
+		\item $\vec{a} \bullet \vec{b} = (-21, 5) \bullet (\sqrt{5}, -3, 1)$ \\andere Dimension nicht möglich
+	\end{enumerate}
+\end{frame}
+
+\subsection{Betrag eines Vektors}
+\begin{frame}
+    \frametitle{Betrag eines Vektors}
+    Der Betrag eines Vektors ist die Länge des Vektors.
+    \begin{itemize}
+	    \item Die länge eines Vektors ist immer positiv
+	    \item Der Betrag eines Vektors wird mit $\lVert \vec{a} \rVert$ dargestellt
+	\item $\lVert \vec{a} \rVert = \sqrt{<\vec{a}, \vec{a}>}$
+    \end{itemize}
+        Beispiel: $\vec{a} = (1,2,3)$
+	\begin{align*}
+		\lVert \vec{a} \rVert &= \sqrt{1^2 + 2^2 + 3^2} \\
+		&= \sqrt{14}
+	\end{align*}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vektor Betrag Übungen}
+	Berechnen Sie den Betrag der Vektoren:
+	\begin{enumerate}
+		\item $\lVert \begin{pmatrix} -1 \\ 5 \\ -0.5 \end{pmatrix} \rVert$
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vektor Betrag Übungen}
+	Berechnen Sie den Betrag der Vektoren:
+	\begin{enumerate}
+		\item $\lVert \begin{pmatrix} -1 \\ 5 \\ -0.5 \end{pmatrix} \rVert = $ \\
+		$ $\\
+		$ \sqrt{(-1)^2 + 5^2 + (-0.5)^2} = \sqrt{26.25} = 5.124$
+	\end{enumerate}
+\end{frame}
+
+\subsection{Winkel zwischen Vektoren}
+\begin{frame}
+    \frametitle{Winkel zwischen Vektoren}
+    Der Winkel zwischen zwei Vektoren ist definiert über:
+	\begin{align*}
+		    \cos \varphi &= \frac{\vec{a} \bullet \vec{b}}{\lVert \vec{a} \rVert \cdot \lVert \vec{b} \rVert} \\
+		    \varphi &= \arccos \left( \frac{\vec{a} \bullet \vec{b}}{\lVert \vec{a} \rVert \cdot \lVert \vec{b} \rVert} \right)
+	\end{align*}
+	\begin{itemize}
+		\item Wenn der Winkel 0° ist, sind die Vektoren parallel
+		\item Wenn der Winkel 90° ist sind die Vektoren orthogonal
+		\item Achtung: Je nach Taschenrechner Modus kommen unterschiedliche Werte raus
+		\item Um den Winkel zu bekommen stellt den Rechner auf (D)egree
+	\end{itemize}
+\end{frame}
+
+
