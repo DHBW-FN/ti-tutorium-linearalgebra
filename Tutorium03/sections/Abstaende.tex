@@ -1,0 +1,41 @@
+\section{Abstände}
+
+\subsection{Punkt - Gerade}
+\begin{frame}
+    \frametitle{Flächenmethode}
+    Der Richtungsvektor der Geraden und der Vektor vom Stützpunkt der Geraden und einem weiteren Punkt spannen ein Dreieck auf.
+    \begin{itemize}
+        \item Fläche eines Dreiecks wie gewohnt: $A = \frac{1}{2} \cdot g * h$
+        \item Fläche eines Dreiecks mit Kreuzprodukt: $A = \frac{1}{2} \cdot |u \times v|$
+        \item Beide Gleichungen gleichsetzen: $A = \frac{1}{2} \cdot |u \times v| = \frac{1}{2} \cdot g * h$
+        \item Gleichung nach h umstellen: $h = \frac{1}{g} \cdot |u \times v|$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Lotfußpunktverfahren}
+    $g: \vec{x} = (1,2,3) + t \cdot (3,4,1)$
+    $P: (3,1,0)$
+    \begin{itemize}
+        \item Variablen Punkt F auf der Geraden erstellen (Geradengleichung in einen Vektor schreiben)
+        \item Variablen Vektor PF erstellen (P - F) mit Parameter r $(1+3r-3, 1+4r-1, -1+r)$
+        \item Skalarprodukt mit Richtungsvektor der Geraden muss 0 sein -> Parameter r bestimmen
+        \item R in Gerade einsetzen und genauen Punkt F Berechnen
+        \item Länge des Vektors PF ist der Abstand
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Abstand Punkt - Gerade mit Funktionen}
+    $y1 = \frac{1}{2}x -1$
+    $P: (3,5)$
+    \begin{itemize}
+        \item Steigung m1 der Geraden ist $frac{1}{2}$
+        \item Für eine Steigung die senkrecht zu m1 steht gilt: $m1 \cdot m2 = -1$
+        \item m2 berechnen: $m2 = -\frac{1}{m1} = -2$
+        \item Orthogonale Aufstellen: $y2 = m2 \cdot x + c$
+        \item Punkt P darin einsetzen und c berechnen: $c = 11$
+        \item Beide Geraden gleichsetzen und den Schnittpunkt F berechnen $y1 = y2$
+        \item Länge des Vektors PF ist der Abstand
+    \end{itemize}
+\end{frame}
