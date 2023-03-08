@@ -22,27 +22,26 @@
 
 \begin{frame}
 	\frametitle{Grundverständnis}
-	Abbildung durch Multiplikation einer Matrix mit Ausgangsmatrix (oder einem Ausgangsvektor) \\
+	Abbildung durch Multiplikation einer Matrix mit Ausgangsvektor \\
 	Hier im zweidimensionalen Raum eine Spiegelung an der x-Achse:
 	\begin{itemize}
-		\item x-Koordinate bleibt unverändert
-		\item y-Koordinate wird negiert
-		\item F = \begin{pmatrix}
+		\item x-Koordinate bleibt unverändert, y-Koordinate wird negiert
+	  \end{itemize}
+	  \begin{gather*}
+		F = \begin{pmatrix}
 			1 & 0 \\
 			0 & -1
-			\end{pmatrix} \\
-		\end{itemize}
+			\end{pmatrix} \\ \end{gather*}
+		
 		Zeilen der Matrix entsprechen den Bildern der Einheitsvektoren
-		\begin{itemize}
-		\item in X-Richtung: \begin{pmatrix}
+		\begin{gather*} in X-Richtung:  \begin{pmatrix}
 			1 \\
 			0 
 			\end{pmatrix} \\
-		\item in Y-Richtung: \begin{pmatrix}
+		in Y-Richtung: \begin{pmatrix}
 			0 \\
-			$-1$
-			\end{pmatrix} \\
-	\end{itemize}
+			-1
+			\end{pmatrix} \\ \end{gather*}
 \end{frame}
 
 \subsection{Transformationen}
@@ -51,55 +50,53 @@
 	\frametitle{Spiegelungen}
 	Spiegelungen im zweidimensionalen Raum:
 	\begin{itemize}
-		\item an x-Achse: \begin{pmatrix}
+		\item an x-Achse: \begin{gather*} \begin{pmatrix}
 			1 & 0 \\
-			0 & $-1$
-			\end{pmatrix} \\
-		\item an y-Achse: \begin{pmatrix}
-			$-1$ & 0 \\
+			0 & -1
+			\end{pmatrix} \\ \end{gather*}
+		\item an y-Achse:  \begin{gather*} \begin{pmatrix}
+			-1 & 0 \\
 			0 & 1
-		\end{pmatrix} \\
-		\item an der Diagonalen: \begin{pmatrix}
+		\end{pmatrix} \\ \end{gather*}
+		\item an der Diagonalen: \begin{gather*} \begin{pmatrix}
 			0 & 1 \\
 			1 & 0
-			\end{pmatrix} \\
+			\end{pmatrix} \\ \end{gather*}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Spiegelungen}
 	Spiegelungen im dreidimensionalen Raum:
-	\begin{itemize}
-		\item an $x_{1}x_{2}$-Ebene: \begin{pmatrix}
+		\begin{gather*} x_{1}x_{2}-Ebene: \begin{pmatrix}
 			1 & 0 & 0\\
 			0 & 1 & 0\\
 			0 & 0 & $-1$
 			\end{pmatrix} \\
-		\item $x_{2}x_{3}$-Ebene: \begin{pmatrix}
-			$-1$ & 0 & 0\\
+		x_{2}x_{3}-Ebene: \begin{pmatrix}
+			-1 & 0 & 0\\
 			0 & 1 & 0\\
 			0 & 0 & 1
 		\end{pmatrix} \\
-		\item $x_{1}x_{3}$-Ebene: \begin{pmatrix}
+		x_{1}x_{3}-Ebene: \begin{pmatrix}
 			1 & 0 & 0\\
 			0 & $-1$ & 0\\
 			0 & 0 & 1
-		\end{pmatrix} \\
-	\end{itemize}
+		\end{pmatrix} \\ \end{gather*}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Streckung / Stauchung}
 	Prinzip für alle Räume identisch:
 	\begin{itemize}
-		\item in Richtung der x-Achse um Faktor s: \begin{pmatrix}
+		\item in Richtung der x-Achse um Faktor s: \begin{gather*} \begin{pmatrix}
 			s & 0 \\
 			0 & 1
-			\end{pmatrix} \\
-		\item in Richtung der y-Achse um Faktor s: \begin{pmatrix}
+			\end{pmatrix} \\ \end{gather*}
+		\item in Richtung der y-Achse um Faktor s: \begin{gather*} \begin{pmatrix}
 			1 & 0 \\
 			0 & s
-		\end{pmatrix} \\
+		\end{pmatrix} \\ \end{gather*}
 	\end{itemize}
 \end{frame}
 
@@ -107,17 +104,18 @@
 	\frametitle{Drehung}
 	Drehung gegen den Uhrzeigersinn um Winkel $\alpha$:
 	\begin{itemize}
-		\item im zweidimensionalen: \begin{pmatrix}
-			$cos{\alpha} & -sin{\alpha}$ \\
-			$sin{\alpha} & cos{\alpha}$
-			\end{pmatrix} \\
+		\item im zweidimensionalen: \begin{gather*} \begin{pmatrix}
+			cos{\alpha} & -sin{\alpha} \\
+			sin{\alpha} & cos{\alpha}
+			\end{pmatrix} \end{gather*} \\
 		\item im dreidimensionalen Raum wird immer um eine Achse gedreht:
-		\item um $X_{1}$-Achse \begin{pmatrix}
-			1 & 0 & 0 \\
-			$0 & cos{\alpha} & -sin{\alpha}$ \\
-			$0 & sin{\alpha} & cos{\alpha}$
-		\end{pmatrix} \\
 	\end{itemize}
+		\begin{gather*} um X_{1}-Achse \begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & cos{\alpha} & -sin{\alpha} \\
+			0 & sin{\alpha} & cos{\alpha}
+		\end{pmatrix} \end{gather*} \\
+	
 \end{frame}
 
 \begin{frame}
@@ -128,14 +126,15 @@
 	\end{itemize}
 	Beispiel:
 	Erst Streckung der x-Achse, dann Spiegeln an Y-Achse:
+	\begin{gather*}
 	\begin{pmatrix}
-		$-1$ & 0 \\
+		-1 & 0 \\
 		0 & 1
 	\end{pmatrix} \cdot
 	\begin{pmatrix}
-		1 & 0 \\
-		0 & 2
-	\end{pmatrix}
+		2 & 0 \\
+		0 & 1
+	\end{pmatrix} \end{gather*}
 \end{frame}
 
 \begin{frame}
@@ -143,7 +142,7 @@
 	Ist eine lineare Abbildung F umkehrbar (Streckung mit 2, zu Stauchung um $\frac{1}{2}$), dann gilt:
 	\begin{itemize}
 		\item Die Umkehrabbildung ist auch eine lineare Abbildung
-		\item Die Umkehrungabbildung ist die Inverse von F -> $F^{-1}$
+		\item Die Umkehrungabbildung ist die Inverse von $F \rightarrow F^{-1}$
 		\item Bei Inversen ist das Produkt von F und $F^{-1}$ die Einheitsmatrix
 		\item Abbildungen bei denen sich die Dimension ändert sind nicht umkehrbar
 	\end{itemize}
@@ -160,11 +159,13 @@
 
 \begin{frame}
 	\frametitle{Übungen}
+	\begin{gather*}
 	Vektor A: \begin{pmatrix}
 		3 \\
 		1 \\
 		2
-	\end{pmatrix} \\
+	\end{pmatrix} 
+	\end{gather*}
 	\begin{itemize}
 		\item A Spiegeln an der $x_{1}x_{2}$-Ebene
 		\item A Strecken um den Faktor 5 in Richtung der $x_{2}$-Achse
@@ -176,7 +177,9 @@
 \begin{frame}
 	\frametitle{Lösungen}
 	\begin{itemize}
-		\item \begin{pmatrix}
+		\item Spiegeln
+		\begin{gather*}
+		\begin{pmatrix}
 			1 & 0 & 0 \\
 			0 & 1 & 0 \\
 			0 & 0 & $-1$
@@ -188,9 +191,10 @@
 			\end{pmatrix} = \begin{pmatrix}
 				3 \\
 				1 \\
-				$-2$
-			\end{pmatrix}
-		\item \begin{pmatrix}
+				-2
+			\end{pmatrix} \end{gather*}
+		\item Strecken
+		\begin{gather*} \begin{pmatrix}
 			1 & 0 & 0 \\
 			0 & 5 & 0 \\
 			0 & 0 & 1
@@ -203,11 +207,18 @@
 				3 \\
 				5 \\
 				2
-			\end{pmatrix}
-		\item \begin{pmatrix}
+			\end{pmatrix} \end{gather*}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Lösungen}
+	\begin{itemize}
+		\item Drehen
+		\begin{gather*} \begin{pmatrix}
 			1 & 0 & 0 \\
-			$0 & cos{90} & -sin{90}$ \\
-			$0 & sin{90} & cos{90}$
+			0 & cos{90} & -sin{90} \\
+			0 & sin{90} & cos{90}
 			\end{pmatrix} \cdot
 			\begin{pmatrix}
 				3 \\
@@ -215,11 +226,12 @@
 				2
 				\end{pmatrix} = \begin{pmatrix}
 					3 \\
-					$-2$ \\
+					-2 \\
 					1
-				\end{pmatrix}
-		\item \begin{pmatrix}
-				$-1$ & 0 & 0 \\
+				\end{pmatrix} \end{gather*}
+		\item Strecken und Drehen
+		\begin{gather*} \begin{pmatrix}
+				-1 & 0 & 0 \\
 				0 & 1 & 0 \\
 				0 & 0 & 1
 				\end{pmatrix} \cdot
@@ -232,9 +244,9 @@
 					1 \\
 					2
 				\end{pmatrix} = \begin{pmatrix}
-					$-3$ \\
+					-3 \\
 					1 \\
 					10
-				\end{pmatrix}
+				\end{pmatrix} \end{gather*}
 	\end{itemize}
 \end{frame}
