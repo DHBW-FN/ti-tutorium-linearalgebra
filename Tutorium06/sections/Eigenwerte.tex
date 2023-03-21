@@ -18,7 +18,7 @@
         \item Umformen von $A \cdot \vec{u} = \lambda \cdot \vec{u}$, um Lambda berechnen zu können
         \item $(A- \lambda I)\vec{u} = \vec{0}$
         \item Deshalb muss $Ker(A - \lambda I) \neq \vec{0}$ sein
-        \item $\rightarrow det(A - \lambda I) = 0$ (Charakteristisches Polynom Chi)
+        \item $\rightarrow det(A - \lambda I) = 0$ (Charakteristisches Polynom $\chi$ Chi)
         \item Mit dem charakteristischen Polynom Chi können wir die Eigenwerte berechnen
     \end{itemize}
 \end{frame}
@@ -36,7 +36,7 @@
     \end{pmatrix} - \lambda \cdot \begin{pmatrix}
         1 & 0 \\
         0 & 1 \\
-    \end{pmatrix}) = det(\begin{pmatrix}
+    \end{pmatrix}) \Rightarrow det(\begin{pmatrix}
         1- \lambda & 1 \\
         1 & 1- \lambda \\
     \end{pmatrix}) = 0$
@@ -56,8 +56,8 @@
 \begin{frame}
     \frametitle{Eigenschaften der Eigenwerte}
     \begin{itemize}
-        \item Bei Dreiecksmatitzen sind die Eigenwerte die Diagonalwerte
-        \item gibt es doppelte Nullstellen hat dieser Eigenwert beispielsweise die Vielfachheit 2
+        \item Bei Dreiecksmatrizen sind die Eigenwerte die Diagonalwerte
+        \item Gibt es doppelte Nullstellen hat dieser Eigenwert beispielsweise die Vielfachheit 2
         \item  Summe aller eigenwerte jeweils multipliziert mit ihrer Vielfachheit $= det(A) =$ Summe aller diagonalwerte von A
         \item In unserem Beispiel, beide Eigenwerte mit Vielfachheit 1 $\rightarrow 1+1 = 2$
         \item Eine Matrix ist regulär wenn alle Eigenwerte ungleich 0 sind
@@ -89,30 +89,34 @@
 \begin{frame}
     \frametitle{Eigenschaften von Eigenvektoren}
     \begin{itemize}
-        \item transponierte Matrix $A ^{T}$ hat selbe Eigenwerte wie A
-        \item Ist die Matrix transponierbar sind die Eigenvektoren verschiedener Eigenwerte orthogonal
+        \item Transponierte Matrix $A ^{T}$ hat die selben Eigenwerte wie $A$
+        \item Ist die Matrix symmetrisch sind die Eigenvektoren verschiedener Eigenwerte orthogonal
     \end{itemize}
 \end{frame}
 
 % Übungen
 \begin{frame}
     \frametitle{Übungen}
-    Bestimmt die Eigenwerte und Eigenvektoren der folgenden Matrizen. Sind die Matrizen regulär?
-    \newline
-    $A = \begin{pmatrix}
-        3 & 1 \\
-        1 & 3 \\
-    \end{pmatrix}$
-    \newline
-    $B = \begin{pmatrix}
-        -8 & -2 \\
-        16 & 4 \\
-    \end{pmatrix}$
+    Bestimmen Sie die Eigenwerte und Eigenvektoren der folgenden Matrizen.
+    Sind die Matrizen regulär?
+  \begin{enumerate}
+        \item
+        $A = \begin{pmatrix}
+                 3 & 1 \\
+                 1 & 3 \\
+        \end{pmatrix}$
+        \item
+        $B = \begin{pmatrix}
+                 -8 & -2 \\
+                 16 & 4  \\
+        \end{pmatrix}$
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Lösungen}
-    Zu 1.: $\lambda_1 = 4$ und $\lambda_2 = 2$ Daher regulär
+    \begin{enumerate}
+    \item $\lambda_1 = 4$ und $\lambda_2 = 2$ Daher regulär
     \newline
     Eigenvektor zu $\lambda_1$ ist $\vec{u_1} = \begin{pmatrix}
         1 \\
@@ -123,9 +127,7 @@
         1 \\
         -1 \\
     \end{pmatrix}$
-    \vspace{0.3cm}
- \newline
-    Zu 2. : $\lambda_1 = -4$ und $\lambda_2 = 0$ Daher nicht regulär
+    \item $\lambda_1 = -4$ und $\lambda_2 = 0$ Daher nicht regulär
     \newline
     Eigenvektor zu $\lambda_1$ ist $\vec{u_1} = \begin{pmatrix}
         -1 \\
@@ -136,4 +138,5 @@
         -1 \\
         4 \\
     \end{pmatrix}$
+    \end{enumerate}
 \end{frame}
